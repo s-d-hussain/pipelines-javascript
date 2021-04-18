@@ -20,12 +20,16 @@ steps:
     command: 'install'
 
 - script: |
+    npm install -g
+  displayName: 'install tools without package.json'
+
+- script: |
     npm install --only=dev
   displayName: 'install tools with package.json'
 
 - script: |
-    npm install -g
-  displayName: 'install tools without package.json'
+    npm install --g mocha
+  displayName: 'install mocha'
 
 - script: |
     npm install -g mocha-junit-reporter
