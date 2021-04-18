@@ -28,7 +28,7 @@ steps:
   displayName: 'install tools without package.json'
 
 - script: |
-    npm install mocha-junit-reporter --save-dev
+    npm install -g mocha-junit-reporter
   displayName: 'install mocha junit reporter'
 
 - script: |
