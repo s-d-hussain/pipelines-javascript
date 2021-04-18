@@ -28,6 +28,10 @@ steps:
   displayName: 'install tools without package.json'
 
 - script: |
+    npm install mocha-junit-reporter --save-dev
+  displayName: 'install mocha junit reporter'
+
+- script: |
     mocha test --reporter mocha-junit-reporter
   displayName: 'mocha test run'
 
