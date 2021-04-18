@@ -28,6 +28,10 @@ steps:
   displayName: 'install tools without package.json'
 
 - script: |
+    mocha test --reporter mocha-junit-reporter
+  displayName: 'mocha test run'
+
+- script: |
     npm install
     npm run build
   displayName: 'npm install and build'
